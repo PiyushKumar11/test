@@ -26,7 +26,7 @@ class RandomParametersExtensionTests {
 
 	@Test
 	void injectsInteger(@Random int i, @Random int j) {
-		assertNotEquals(i, i);
+		assertEquals(i, j);
 	}
 
 	@Test
